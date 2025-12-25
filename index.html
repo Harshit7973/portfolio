@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harshit Garg - Web development & IOT Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<!-- Navigation -->
+<nav>
+  <div class="container">
+    <div class="logo">
+      <a href="#home" style="text-decoration: none; color: inherit;">Harshit Garg</a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="mobile-menu" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h1>Harshit Garg</h1>
+      <p class="subtitle">Web development & IOT Engineer</p>
+      <p class="location">Bharatpur, Rajasthan, India</p>
+      <a href="#contact" class="cta-button">Get In Touch</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div>
+          <div class="stats">
+            <div class="stat-item">
+              <div class="stat-number">6+</div>
+              <div>weeks Experience</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">2</div>
+              <div>Projects Completed</div>
+            </div>
+            
+          </div>
+        </div>
+        <div class="about-text">
+          <p style="text-align: justify; margin-block-end: 16px;">
+  I'm a pre-final-year Electronics and communication Engineering student at LNM institute of information Technology with a strong passion for Web development and IOT Engineering. I've developed Web development projects.
+</p>
+
+<p style="text-align: justify; margin-block-end: 16px;">
+  I’ve interned at UMA Electronics in field of Embedded Engineering.
+</p>
+
+<p style="text-align: justify;">
+  I am actively learning full stack development.
+</p>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="education">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="education-item">
+        <h3>B.Tech - Electronics and communication Engineering</h3>
+        <div class="institution">The LNM institute of information Technology,Jaipur</div>
+        <div class="year">2023 – 2027</div>
+      </div>
+      <div class="education-item">
+        <h3>Senior Secondary Education</h3>
+        <div class="institution">Vivekanand Public School, Bharatpur</div>
+        <div class="year">2021 - 2022</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="experience">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <div class="experience-item">
+        <h3>Embedded Engineer Intern</h3>
+        <div class="company">UMA Electronics Pvt. Ltd.</div>
+        <div class="duration">June 2025 – july 2025</div>
+        <ul>
+          <li>Completed a 6-week Summer Internship in an electronics company, working on SMPS, flyback converters, and ZVT techniques.</li>
+          <li>Gained hands-on experience with dsPIC microcontrollers for testing, debugging, and validation of power electronic circuits</li>
+          <li>Performed analog circuit analysis and hardware testing using DSO, power supply, and multimeter</li>
+          <li>Understood industrial design practices, safety standards, and documentation in power electronics systems.</li>
+        </ul>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <a href="https://gailintern2025.streamlit.app/" target="_blank" style="text-decoration: none; color: inherit;">
+        <div class="project-card" onclick="openModal('workcast-modal')">
+          <div class="project-header">
+            <h3>ForeCast2Work – Work Suitability Predictor</h3>
+            <div class="project-duration">May 2025 – July 2025</div>
+          </div>
+          <div class="project-content">
+            <p>AI-powered app that predicts work suitability based on weather with 90%+ accuracy.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Streamlit</span>
+              <span class="tech-tag">Logistic Regression</span>
+              <span class="tech-tag">Tomorrow.io API</span>
+            </div>
+          </div>
+        </div>
+        </a>
+        <div class="project-card" onclick="openModal('bus-modal')">
+          <div class="project-header">
+            <h3>Bus Booking System</h3>
+            <div class="project-duration">June 2024 – Dec 2024</div>
+          </div>
+          <div class="project-content">
+            <p>GUI-based system for managing bus bookings, seat availability, and schedules.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Tkinter</span>
+              <span class="tech-tag">SQLite</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Languages</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">HTML/CSS</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Frameworks & Libraries</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Scikit-learn</span>
+            <span class="skill-tag">Pandas</span>
+            <span class="skill-tag">NumPy</span>
+            <span class="skill-tag">TensorFlow</span>
+            <span class="skill-tag">Matplotlib</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Databases</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">SQLAlchemy</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Tools & Technologies</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Jupyter</span>
+            <span class="skill-tag">Apache Spark</span>
+            <span class="skill-tag">Apache Airflow</span>
+            <span class="skill-tag">Streamlit</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="certifications">
+    <div class="container">
+      <h2 class="section-title">Certifications</h2>
+      <div class="cert-grid">
+        <div class="cert-item">
+          <h3>Machine Learning Foundation</h3>
+          <div class="cert-provider">Infosys Springboard</div>
+        </div>
+        <div class="cert-item">
+          <h3>Data Structures and Algorithms</h3>
+          <div class="cert-provider">Infosys Springboard</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+  <div class="container">
+    <h2 class="section-title">Get In Touch</h2>
+    <p style="margin-block-end: 24px;">I'm always open to discussing new opportunities and interesting projects.</p>
+
+    <div class="contact-columns" style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-between;">
+
+      <!-- Left Column -->
+      <div class="contact-left" style="flex: 1; min-inline-size: 280px;">
+        <div class="contact-item"  style="margin-block-end: 20px;">
+          <h3>Email</h3>
+          <a href="mailto:harshitgarg78450@gmail.com" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: inherit;">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email"
+              style="inline-size: 20px; block-size: 20px;" />
+            <span>Email</span>
+          </a>
+        </div>
+
+        <div class="contact-item" style="margin-block-end: 20px;">
+          <h3>GitHub</h3>
+          <a href="https://github.com/harshit7973" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: inherit;">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"
+              style="inline-size: 20px; block-size: 20px;" />
+            <span>GitHub</span>
+          </a>
+        </div>
+
+        <div class="contact-item" style="margin-block-end: 20px;">
+          <h3>LinkedIn</h3>
+          <a href="https://www.linkedin.com/in/harshit-garg-227999244/  " target="_blank" style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: inherit;">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn"
+              style="inline-size: 20px; block-size: 20px;" />
+            <span>LinkedIn</span>
+          </a>
+        </div>
+
+        <div class="contact-item">
+          <h3>Location</h3>
+          <p>Bharatpur, Rajasthan, India</p>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="contact-right" style="flex: 1; min-inline-size: 280px;">
+        <div class="contact-item">
+          <h3>Send Me a Message</h3>
+          <form action="https://formspree.io/f/mnjakeeo" method="POST" style="display: flex; flex-direction: column; gap: 12px;">
+            <input type="text" name="name" placeholder="Your Name" required style="padding: 10px; border-radius: 6px; border: 1px solid #ccc;">
+            <input type="email" name="email" placeholder="Your Email" required style="padding: 10px; border-radius: 6px; border: 1px solid #ccc;">
+            <textarea name="message" placeholder="Your Message" rows="4" required style="padding: 10px; border-radius: 6px; border: 1px solid #ccc;"></textarea>
+            <button type="submit" style="padding: 10px; background-color: #007bff; color: white; border: none; border-radius: 6px; cursor: pointer;">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+  <!-- Modals -->
+  <div id="workcast-modal" class="modal"></div>
+  <div id="bus-modal" class="modal"></div>
+
+  <!-- External JS -->
+  <script src="script.js"></script>
+</body>
+</html>
